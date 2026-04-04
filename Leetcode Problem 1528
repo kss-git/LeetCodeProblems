@@ -1,0 +1,9 @@
+a=0
+b=""
+while a< len(indices):
+  for x in range(0,len(indices)):
+  if a==indices[x]:
+  b=b+s[x]
+  a=a+1
+
+return b
