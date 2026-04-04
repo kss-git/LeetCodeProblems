@@ -1,0 +1,12 @@
+a=0
+b=1
+f=True
+while f==True:
+    if b not in arr:
+        a=a+1
+        if a==k:
+            f=False
+            return b
+    b=b+1
+
+        
