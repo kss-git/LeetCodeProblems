@@ -1,25 +1,23 @@
 for x in range(0, len(coordinates)-1):
-            if x==0:
-                try:
-                    y=(coordinates[x+1][1]-coordinates[x][1])/(coordinates[x+1][0]-coordinates[x][0])
-                except:
-                    for x in range(0,len(coordinates)-1):
-                        if coordinates[x][0]==coordinates[x+1][0]:
-                            a=1
-                        else:
-                            return False
-            else:
-                try:
-                    z=(coordinates[x+1][1]-coordinates[x][1])/(coordinates[x+1][0]-coordinates[x][0])
-                    if y!=z:
-                        return False
-                except:
-                    for x in range(0,len(coordinates)-1):
-                        if coordinates[x][0]==coordinates[x+1][0]:
-                            a=1
-                        else:
-                            return False
+    if x==0:
+        try:
+            y=(coordinates[x+1][1]-coordinates[x][1])/(coordinates[x+1][0]-coordinates[x][0])
+        except:
+            for x in range(0,len(coordinates)-1):
+                if coordinates[x][0]==coordinates[x+1][0]:
+                    a=1
+                else:
+                    return False
+    else:
+        try:
+            z=(coordinates[x+1][1]-coordinates[x][1])/(coordinates[x+1][0]-coordinates[x][0])
+            if y!=z:
+                return False
+        except:
+            for x in range(0,len(coordinates)-1):
+                if coordinates[x][0]==coordinates[x+1][0]:
+                    a=1
+                else:
+                    return False
 
-        return True
-
-        
+return True
