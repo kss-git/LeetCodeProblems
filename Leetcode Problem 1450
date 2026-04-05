@@ -1,0 +1,5 @@
+a=0
+for x in range(0, len(startTime)):
+    if startTime[x] <= queryTime and endTime[x] >= queryTime:
+        a=a+1
+return a
