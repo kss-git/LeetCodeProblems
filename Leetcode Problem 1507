@@ -1,0 +1,36 @@
+l=""
+l=l+date[-4:]+"-"
+
+if"Jan"in date:
+    l=l+"01"
+elif"Feb"in date:
+    l=l+"02"
+elif"Mar"in date:
+    l=l+"03"
+elif"Apr"in date:
+    l=l+"04"
+elif"May"in date:
+    l=l+"05"
+elif"Jun"in date:
+    l=l+"06"
+elif"Jul"in date:
+    l=l+"07"
+elif"Aug"in date:
+    l=l+"08"
+elif"Sep"in date:
+    l=l+"09"
+elif"Oct"in date:
+    l=l+"10"
+elif"Nov"in date:
+    l=l+"11"
+elif"Dec"in date:
+    l=l+"12"
+
+l=l+"-"
+
+if date[1]in"0123456789":
+    l=l+date[0:2]
+else:
+    l=l+"0"+date[0]
+
+return l
