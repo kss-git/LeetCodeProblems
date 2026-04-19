@@ -1,0 +1,22 @@
+a= sorted(arr)
+b=[]
+s=0
+w=0
+while w<len(a):
+    l=1
+    g=True
+    while g==True:
+        if s+1<len(a) and a[s]==a[s+1]:
+            l=l+1
+            w=w+1
+            s=s+1
+        else:
+            l=l+1
+            w=w+1
+            s=s+1
+            g=False
+    if l in b:
+        return False
+    b.append(l)
+
+return True
