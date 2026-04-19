@@ -1,0 +1,11 @@
+def three_pow(n):
+    if n == 1:
+        return True
+    elif n < 1:
+        return False
+    elif n % 3 != 0:
+        return False
+    else:
+        return three_pow(n // 3)
+
+return three_pow(n)
