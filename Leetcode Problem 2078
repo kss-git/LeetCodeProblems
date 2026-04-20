@@ -1,0 +1,12 @@
+if colors[0]!=colors[-1]:
+    return len(colors)-1
+else:
+    a=0
+    n=len(colors)
+    for x in range(0,len(colors)):
+        for y in range(1,len(colors)+1):
+            if colors[x]!=colors[-1*y]:
+                g=n-y
+                if abs(x-g)>a:
+                    a=abs(x-g)
+    return a
