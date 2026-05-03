@@ -1,0 +1,15 @@
+        for x in range(0, len(dominoes)):
+            dominoes[x].sort()
+        
+        dominoes.sort()
+ 
+        a=1
+        b=0
+        for x in range(1,len(dominoes)):
+            if dominoes[x]== dominoes[x-1]:
+                a=a+1
+            else:
+                b=b+a*(a-1)//2
+                a=1
+        b=b+a*(a-1)//2
+        return b
