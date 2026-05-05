@@ -1,0 +1,17 @@
+a=0
+a=a+numBottles
+e=0
+e=numBottles
+numBottles=0
+while numBottles+e > numExchange:
+    numBottles = numBottles+ (e//(numExchange))
+    e=e%numExchange
+    a=a+numBottles
+    e=e+numBottles
+    numBottles=0
+
+if numBottles+e == numExchange:
+    a=a+numBottles
+    a=a+1
+
+return a
