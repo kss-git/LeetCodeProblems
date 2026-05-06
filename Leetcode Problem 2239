@@ -1,0 +1,11 @@
+a=abs(0-nums[0])
+b=nums[0]
+for x in range(1,len(nums)):
+    if a>abs(0-nums[x]):
+        a=abs(0-nums[x])
+        b=nums[x]
+
+if b<0 and abs(b) in nums:
+    return -b
+
+return b
