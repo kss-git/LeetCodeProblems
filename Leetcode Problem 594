@@ -1,0 +1,27 @@
+nums.sort()
+n=0
+b=1
+
+for x in range(len(nums)-1):
+
+    if nums[x]==nums[x+1]:
+        b=b+1
+
+    elif nums[x]+1==nums[x+1]:
+
+        c=b
+        y=x+1
+
+        while y<len(nums) and nums[y]==nums[x+1]:
+            c=c+1
+            y=y+1
+
+        if c>n:
+            n=c
+
+        b=1
+
+    else:
+        b=1
+
+return n
