@@ -1,0 +1,9 @@
+r=str(n)
+p=1
+s=0
+
+for x in range(0,len(r)):
+    p=p* int(r[x])
+    s=s+int(r[x])
+
+return p-s
