@@ -1,0 +1,17 @@
+if start > destination:
+    start, destination = destination, start
+
+a = 0
+for x in range(start, destination):
+    a = a + distance[x]
+
+total = 0
+for x in range(len(distance)):
+    total = total + distance[x]
+
+b = total - a
+
+if a < b:
+    return a
+else:
+    return b
