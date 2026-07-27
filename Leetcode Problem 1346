@@ -1,0 +1,11 @@
+for x in range(0,len(arr)):
+    for y in range(0,len(arr)):
+        try:
+            if arr[x]/arr[y]==2 or arr[x]/arr[y]==0.5:
+                return True
+        except:
+            if arr[x]==arr[y]==0 and x!=y:
+                return True
+            else:
+                continue
+return False
