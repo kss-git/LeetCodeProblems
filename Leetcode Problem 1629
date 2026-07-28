@@ -1,0 +1,13 @@
+a=releaseTimes[0]
+b=0
+
+for x in range(len(releaseTimes)-1):
+    d=releaseTimes[x+1]-releaseTimes[x]
+
+    if d>a:
+        a=d
+        b=x+1
+    elif d==a and keysPressed[x+1]>keysPressed[b]:
+        b=x+1
+
+return keysPressed[b]
