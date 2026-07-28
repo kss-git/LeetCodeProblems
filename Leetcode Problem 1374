@@ -1,0 +1,11 @@
+if n%2==1:
+    a=""
+    for x in range(0,n):
+        a=a+"a"
+return a
+else:
+   d=""
+   for z in range(0,n-1):
+       d=d+"a"
+                
+   return d+"b"
