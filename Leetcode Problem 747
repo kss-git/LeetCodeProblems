@@ -1,0 +1,9 @@
+r=nums
+n=sorted(nums)
+
+for x in range(0,len(r)):
+    if r[x]==n[-1]:
+        if n[-1]/2 >= n[-2]:
+            return x
+        else:
+            return -1
