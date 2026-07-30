@@ -1,0 +1,9 @@
+a=[]
+for x in range(0,len(accounts)):
+    b=0
+    for y in range(0,len(accounts[x])):
+        b=b+accounts[x][y]
+    a.append(b)
+
+a=sorted(a)
+return a[-1]
