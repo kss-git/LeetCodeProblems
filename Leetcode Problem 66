@@ -1,0 +1,9 @@
+s=""
+for x in range(0,len(digits)):
+    s=s+ str(digits[x])
+i= int(s)+1
+s=str(i)
+d=[]
+for x in range(0,len(s)):
+    d.append(int(s[x]))
+return d
