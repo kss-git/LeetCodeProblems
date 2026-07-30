@@ -1,0 +1,19 @@
+o=["a","c","e","g"]
+e=["b","d","f","h"]
+d=["1","3","5","7"]
+v=["2","4","6","8"]
+
+c=[]
+c.append(coordinates[0])
+c.append(coordinates[1])
+
+if c[0] in o:
+    if c[1] in v:
+        return True
+    else: 
+        return False
+else:
+    if c[1] in v:
+        return False
+    else:
+        return True
