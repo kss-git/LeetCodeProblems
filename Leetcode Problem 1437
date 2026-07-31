@@ -1,0 +1,9 @@
+a=-2*len(nums)
+for x in range(0,len(nums)):
+    if nums[x]==1:
+        if x-a <=k:
+            return False
+        else:
+            a=x
+
+return True
