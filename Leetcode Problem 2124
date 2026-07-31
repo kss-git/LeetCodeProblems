@@ -1,0 +1,9 @@
+g=len(s)
+for x in range(0,len(s)):
+    if s[x]=="b":
+        g=x
+        break
+
+if "a" in s[g:]:
+    return False
+return True
