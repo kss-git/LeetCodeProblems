@@ -1,0 +1,9 @@
+a=0
+for x in sentences:
+    b=1
+    for y in x:
+        if y==" ":
+            b=b+1
+    if b>a:
+        a=b
+return a
