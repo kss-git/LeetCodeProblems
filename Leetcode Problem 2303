@@ -1,0 +1,17 @@
+t=0
+i=0
+for x in range(0,len(brackets)):
+    if x==0:
+        if income<=brackets[0][0]:
+            return income*brackets[0][1]*0.01
+            break
+        else:
+            t=t+brackets[0][0]*brackets[0][1]*0.01
+            i=i+brackets[0][0]
+    else:
+        if i+(brackets[x][0]-brackets[x-1][0])>=income:
+            return t+(income-i)*brackets[x][1]*0.01
+            break
+        else:
+            t=t+(brackets[x][0]-brackets[x-1][0])*brackets[x][1]*0.01
+            i=i+(brackets[x][0]-brackets[x-1][0])
