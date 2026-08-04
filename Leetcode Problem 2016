@@ -1,0 +1,14 @@
+a=-1
+for x in range(0,len(nums)):
+    for y in range(0,len(nums)):
+        if x!=y:
+            if x>y and nums[x]> nums[y]:
+                if a<nums[x]-nums[y]:
+                    a=nums[x]-nums[y]
+            elif y>x and nums[y]> nums[x]:
+                if a<nums[y]-nums[x]:
+                    a=nums[y]-nums[x]
+
+return a
+
+ 
