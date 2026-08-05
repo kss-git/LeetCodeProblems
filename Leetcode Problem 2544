@@ -1,0 +1,8 @@
+a=0
+g=str(n)
+for x in range(0,len(g)):
+    if x%2==0:
+        a=a+int(g[x])
+    else:
+        a=a-int(g[x]) 
+return a
