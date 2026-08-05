@@ -1,0 +1,6 @@
+a=str(num)
+b=0
+for x in a:
+    if num%int(x)==0:
+        b=b+1
+return b
