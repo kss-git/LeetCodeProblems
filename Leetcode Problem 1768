@@ -1,0 +1,18 @@
+if len(word2)>len(word1):
+    a= word2[len(word1):]
+    b= word2[:len(word1)]
+    c=word1
+else:
+    a= word1[len(word2):]
+    b= word1[:len(word2)]
+    c= word2
+d=""
+for x in range(0,len(c)):
+    if c==word1:
+        d=d+c[x]
+        d=d+b[x]
+    else:
+        d=d+b[x]
+        d=d+c[x]
+        
+return d+a
