@@ -1,0 +1,21 @@
+a= nums1[0]*10+ nums2[0]
+b=0
+for x in range(0,len(nums1)):
+    for y in range(0,len(nums2)):
+        if nums1[x] in nums2:
+            b=nums1[x]
+        else:
+            b=nums1[x]*10+nums2[y]
+        if b<a:
+            a=b
+for c in range(0,len(nums2)):
+    for d in range(0,len(nums1)):
+        if nums2[c] in nums1:
+            b=nums2[c]
+        else:
+            b=nums2[c]*10+nums1[d]
+        if b<a:
+            a=b
+return a
+  
+  
