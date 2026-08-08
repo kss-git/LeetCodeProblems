@@ -1,0 +1,16 @@
+a=[]
+b=[]
+for x in range(0,len(nums)):
+    if nums[x]%2==0:
+        a.append(nums[x])
+    else:
+        b.append(nums[x])
+        
+c=[]
+for y in range(0,len(a)):
+    try:
+        c.append(a[y])
+        c.append(b[y])
+    except:
+        return c
+return c
