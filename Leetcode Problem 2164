@@ -1,0 +1,30 @@
+a=[]
+b=[]
+for x in range(0,len(nums)):
+    if x%2==0:
+        a.append(nums[x])
+    else:
+        b.append(nums[x])
+
+a=sorted(a)
+b=sorted(b)
+b=b[::-1]
+c=[]
+if len(a)<len(b):
+    e=len(a)
+elif len(b)<len(a):
+    e=len(b)
+    d=a[-1]
+else:
+    e=len(a)
+
+for x in range(0,e):
+    c.append(a[x])
+    c.append(b[x])
+
+try:
+    c.append(d)
+except:
+    f=1 
+return c
+            
