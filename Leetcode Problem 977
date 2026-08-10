@@ -1,0 +1,4 @@
+a=[]
+for x in nums:
+    a.append(x**2)
+return sorted(a)
