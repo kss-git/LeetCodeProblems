@@ -1,0 +1,14 @@
+d=s
+s.strip()
+while "  " in s:
+    s.replace("  "," ")
+a=0
+for x in range(0,len(s)):
+    if s[x]==" " and a<k:
+        a=a+1
+        if a==k:
+            b=x
+if a<k:
+    return d
+else:
+    return s[:b]
