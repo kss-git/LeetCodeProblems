@@ -1,0 +1,7 @@
+a=[0]
+b=0
+for x in gain:
+    b=b+x
+    a.append(b)
+ar=sorted(a)
+return ar[-1]
