@@ -1,0 +1,5 @@
+a=tasks[0][0]+tasks[0][1]
+for x in tasks:
+    if x[0]+x[1]<a:
+        a=x[0]+x[1]
+return a
