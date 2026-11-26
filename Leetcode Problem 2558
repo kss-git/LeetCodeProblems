@@ -1,0 +1,9 @@
+import math
+for x in range(0,k):
+    gifts.sort()
+    gifts[-1]= math.isqrt(gifts[-1])
+d=0
+for y in gifts:
+    d=d+y
+return d
+        
