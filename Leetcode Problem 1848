@@ -1,0 +1,6 @@
+a=len(nums)
+for x in range(0,len(nums)):
+    if nums[x]==target:
+        if abs(start-x)<a:
+            a=abs(start-x)
+return a
